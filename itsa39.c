@@ -21,7 +21,7 @@ int main() {
         }
         //一科不及格
         else if (failCnt == 1) {
-            if (sum > 220){
+            if (sum >= 220){
                printf("P\n");
             }else{
                printf("M\n");   

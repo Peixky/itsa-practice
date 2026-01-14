@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+   int weight, h;
+   scanf("%d %d", &weight, &h);
+   float height = h / 100.0;
+   float BMI = weight / (height * height);
+   printf("%.2f", BMI);
+   
+}

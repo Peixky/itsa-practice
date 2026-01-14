@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+   int floor, h;
+   scanf("%d %d", &floor, &h);
+   double area = floor * h / 2;
+   printf("Triangle area:%.1f\n", area);
+}

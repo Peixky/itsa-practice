@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+   int P;
+   scanf("%d", &P);
+   int total = P * 100;
+   if (P >= 100) {
+      total = total * 0.7;
+   } else if (P >= 30) {
+      total = total * 0.8;
+   } else if (P >= 10) {
+      total = total * 0.9;
+   }
+   printf("%d", total);
+   
+}

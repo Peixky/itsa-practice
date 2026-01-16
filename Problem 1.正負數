@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+   int n;
+
+   while (scanf("%d", &n) != EOF) {
+      char subject[50];
+      int score;
+      int passCount = 0;
+
+      for (int i = 0; i < n; i++) {
+         scanf("%s %d", subject, &score);
+         if (score >= 60) {
+               printf("%s\n", subject);
+               passCount++;
+         }
+      }
+
+      if (passCount * 2 >= n){
+         printf("晉級\n");
+      }else{
+         printf("失敗\n");
+      } 
+   }
+}
